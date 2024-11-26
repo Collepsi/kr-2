@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="form_style.css">
+    <meta name="viewport">
+    <title>Form</title>
+</head>
+<body>
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html"><img src="images/logo.png" width="20" height="20"></a>
+    </li>
+    <li class="nav-item dropdown active">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="index.html" role="button" aria-haspopup="true" aria-expanded="false">Главная</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#carouselExampleIndicators">Примеры работ</a>
+        <a class="dropdown-item" href="#">Почему мы?</a>
+        <a class="dropdown-item" href="#contacts">Контакты</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://www.google.com" target="_blank">Внешний сайт</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="ph-2.html">Заказать</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="ph-3.html">Цены</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="ph-4.html">Товары</a>
+    </li>
+  </ul>
+
+    <form id="form" action="https://www.google.com" id="UserEnter" name="UserEnter" target="_blank">
+    <input name="q" type="hidden" value="search">
+    <div class="form-main">
+      <div class="input-text">
+        <h6>Ваши ФИО</h6>
+        <input type="text" name="name" placeholder="Введите ФИО" value="" wfd-id="id1">
+        <h6>Ваша почта</h6>
+        <input type="text" name="mail" placeholder="Введите почту" value="" wfd-id="id2">
+        <h6>Ваш номер телефона</h6>
+        <input type="text" name="phone" placeholder="Введите телефон" value="" wfd-id="id3">
+      </div>
+        <h6>Выберете тип продукта</h6>
+        <select id="product-type" name="product-type" size="1">
+          <option value="maket1" wfd-id="id4">Макет1</option>
+          <option value="maket2" wfd-id="id4">Макет2</option>
+        </select>
+        <h6>Нужены ли дополнения?</h6>
+        <ul class="options">
+          <li><input type="checkbox" name="dop" value="конверт" wfd-id="id4">Подарочный конверт</input></li>
+          <li></li><input type="checkbox" name="dop" value="пакет" wfd-id="id5">Пакет</input></li>
+          <li><input type="checkbox" name="dop" value="открытка" wfd-id="id6">Открытка</input></li>
+        </ul>
+        <h6>Количество экзамляров</h6>
+        <input type="number" name="number" min="0" oninput="this.value = Math.abs(this.value)" wfd-id="id7">
+        <h6>Выберете тип доставки</h6>
+        <ul class="options">
+            <li><input type="radio" name="delivery" value="СДЭК" wfd-id="id8">СДЭК</input></li>
+            <li><input type="radio" name="delivery" value="Почта России" wfd-id="id9">Почта России</input></li>
+            <li><input type="radio" name="delivery" value="Самовывоз" wfd-id="id10">Самовывоз</input></li>
+        </ul>
+        <input type="file" id="file" name="file" accept="image/png, image/jpeg, .pdf, .svg" wfd-id="id11">
+        <h6>Дата доставки</h6>
+        <input type="date" name="date" wfd-id="id12"></input>
+        <h6>Комментарии</h6>
+        <textarea name="comments" id="comments" wfd-id="id13"></textarea>
+    </div>
+    <input name="submit" type="submit" id="send" value="Отправить">
+    </form>
+</body>

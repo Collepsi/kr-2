@@ -1,0 +1,42 @@
+table{
+    background-image: url('images/gradient.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th{
+    padding-left: 3px;
+}
+.description{
+    display: flex;
+    align-items: center;
+    margin-left:20px;
+    margin-right:20px;
+    height: 100px;
+    width: 300px;
+}
+
+.description p{
+    text-align: left;
+    padding-left:20px;
+}
+
+td{
+    width: 120px;
+    text-align: center;
+}
+
+input{
+    width: 40px;
+}
+
+table img{
+    width: 100px;
+    height: 100px;
+}
