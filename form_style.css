@@ -3,7 +3,6 @@
   }
   
 form{
-    margin-top: 20px;
     padding-top: 40px;
     background-color: chartreuse;
     text-align: center;
@@ -11,9 +10,6 @@ form{
 .options{
     margin-bottom: 10px;
     list-style: none;
-    align-items: center;
-    width: 100%;
-    display: inline-block;
 }
 
 

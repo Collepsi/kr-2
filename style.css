@@ -9,7 +9,6 @@ body{
     text-align: center;
 }
 
-
 main{
     margin-left: 60px;
     margin-right: 60px;
@@ -25,15 +24,20 @@ main{
 @media only screen and (min-width: 600px) {
     @keyframes openclose {
         0% {
-          width: 250px;
+          width: 310px;
         }
         100% {
-          width: 430px;
+          width: 450px;
         }
+      }
+
+      h1{
+        max-width: 100%;
       }
 }
 
 .info{
+    margin-top: 50px;
     display: flex;
     align-items: center;
 }
@@ -47,7 +51,7 @@ h1{
     color: #181f02;
     background-color: #b2f219;
     text-align: left;
-    max-width: 430px;
+    max-width: 450px;
     animation: openclose;
     animation-duration: 3s;
 }
@@ -75,15 +79,20 @@ article p{
 
 .team{
     margin-top: 60px;
+    width: 100%;
 }
+
 .card{
     display: inline-block;
     margin-bottom: 20px;
     margin-top: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
 }
 
 .why-us{
     padding-top: 60px;
+    margin-bottom: 70px;
 }
 .why-us ol{
     text-align: left;
@@ -102,7 +111,7 @@ article p{
 footer{
     margin-left: 60px;
     margin-right: 60px;
-    padding-top: 50px;
+    padding-top: 10px;
     text-align: left;
 }
 
